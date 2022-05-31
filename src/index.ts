@@ -1,3 +1,10 @@
-import { testFn } from "./module";
+import { readData } from "./reader/dataReader";
 
-testFn();
+try {
+  console.log("Start");
+  console.log("Parse data file");
+  console.log(readData());
+  console.log("Compute election result");
+} catch (error) {
+  console.error(error);
+}
